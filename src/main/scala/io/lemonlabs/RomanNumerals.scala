@@ -29,7 +29,6 @@ trait RomanNumerals {
       }
     }
 
-    if(i == 0) ""
-    else buildRoman(i, "")
+    buildRoman(i, "")
   }
 }

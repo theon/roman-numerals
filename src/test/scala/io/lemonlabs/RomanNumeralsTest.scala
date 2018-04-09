@@ -8,6 +8,10 @@ class RomanNumeralsTest extends FlatSpec with Matchers {
     val romanNumerals = new RomanNumerals {}
   }
 
+  "-1" should "return empty string" in new TestCase {
+    romanNumerals.toRoman(-1) should equal("")
+  }
+
   "0" should "return empty string" in new TestCase {
     romanNumerals.toRoman(0) should equal("")
   }
